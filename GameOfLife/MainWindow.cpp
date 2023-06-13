@@ -6,6 +6,8 @@
 #include "next.xpm"
 #include "trash.xpm"
 #define TIMER 20003
+
+
 wxBEGIN_EVENT_TABLE(MainWindow, wxFrame)
 EVT_SIZE(MainWindow::OnSize)
 EVT_MENU(25000, MainWindow::Play)
@@ -14,7 +16,7 @@ EVT_MENU(20001, MainWindow::Next)
 EVT_MENU(20002, MainWindow::Trash)
 EVT_TIMER(TIMER, MainWindow::Watch)
 wxEND_EVENT_TABLE()
-MainWindow::MainWindow() :wxFrame(nullptr, wxID_ANY, "Game of Life", wxPoint(0, 0), wxSize(800, 600))
+MainWindow::MainWindow() :wxFrame(nullptr, wxID_ANY, "the Game of Life", wxPoint(0, 0), wxSize(800, 600))
 {
 	Status = CreateStatusBar();
 	SetStatusText(Status);
