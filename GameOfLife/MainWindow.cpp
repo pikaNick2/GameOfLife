@@ -7,7 +7,6 @@
 #include "trash.xpm"
 #define TIMER 20003
 
-
 wxBEGIN_EVENT_TABLE(MainWindow, wxFrame)
 EVT_SIZE(MainWindow::OnSize)
 EVT_MENU(25000, MainWindow::Play)
