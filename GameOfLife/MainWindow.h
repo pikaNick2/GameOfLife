@@ -31,7 +31,7 @@ public:
 	void Pause(wxCommandEvent& plus);
 	void Next(wxCommandEvent& minus);
 	void Trash(wxCommandEvent& bin);
-	void Watch(wxTimer* watch);
+	void Watch(wxTimerEvent& watch);
 	int LivingCell(int m, int n);
 	wxDECLARE_EVENT_TABLE();
 };

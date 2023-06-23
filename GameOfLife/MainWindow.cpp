@@ -12,7 +12,7 @@ EVT_MENU(25000, MainWindow::Play)
 EVT_MENU(30000, MainWindow::Pause)
 EVT_MENU(20001, MainWindow::Next)
 EVT_MENU(20002, MainWindow::Trash)
-EVT_TIMER(TIMER, MainWindow::Watch)
+EVT_TIMER(20003, MainWindow::Watch)
 wxEND_EVENT_TABLE()
 MainWindow::MainWindow() :wxFrame(nullptr, wxID_ANY, "the Game of Life", wxPoint(0, 0), wxSize(800, 600))
 {
@@ -35,7 +35,7 @@ MainWindow::MainWindow() :wxFrame(nullptr, wxID_ANY, "the Game of Life", wxPoint
 	Tool->AddTool(20001, "Next", nextIcon);
 	Tool->AddTool(20002, "Trash", trashIcon);
 	Tool->Realize();
-	watch = new wxTimer(this, TIMER);
+	watch = new wxTimer(this, 20003);
 }
 
 MainWindow::~MainWindow()
@@ -169,7 +169,7 @@ void MainWindow::Generation()
 	SetStatusText(Status);
 	Refresh();
 }
-void MainWindow::Watch(wxTimer* watch)
+void MainWindow::Watch(wxTimerEvent& watch)
 {
 
 }
