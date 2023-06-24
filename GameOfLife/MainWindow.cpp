@@ -171,5 +171,5 @@ void MainWindow::Generation()
 }
 void MainWindow::Watch(wxTimerEvent& watch)
 {
-
+	
 }
