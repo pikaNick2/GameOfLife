@@ -25,6 +25,7 @@ MainWindow::MainWindow() :wxFrame(nullptr, wxID_ANY, "the Game of Life", wxPoint
 	this->SetSizer(boxsize);
 	this->Bind(wxEVT_SIZE, &MainWindow::OnSize, this);
 	InitializeGrid();
+
 	
 	wxBitmap playIcon(play_xpm);
 	wxBitmap pauseIcon(pause_xpm);
