@@ -38,7 +38,6 @@ MainWindow::MainWindow() :wxFrame(nullptr, wxID_ANY, "the Game of Life", wxPoint
 	Tool->Realize();
 	watch = new wxTimer(this, 20003);
 }
-
 MainWindow::~MainWindow()
 {
 
