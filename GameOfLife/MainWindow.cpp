@@ -160,7 +160,6 @@ void MainWindow::Generation()
 				livin + 1;
 			}
 
-
 		}
 
 	}
